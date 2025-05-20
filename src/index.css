@@ -1,0 +1,109 @@
+:root {
+  --white: #fff;
+  ---primay: #61ECBC;
+  ---contrast: #182339;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("/public/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 60rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.app-title {
+  font-size: 3.8rem;
+  margin-top: 5rem;
+  color: var(--white);
+  line-height: .8;
+}
+
+h1 span {
+  display: block;
+  color: var(---primay);
+  font-size: 4.4rem;
+}
+
+.content {
+  margin-top: 5rem;
+  padding: 6rem 2rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.form, .field {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem
+}
+
+.form label {
+  color: var(---contrast);
+}
+
+.form select {
+  background-color: #ECEBEB;
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+}
+
+form [type="submit"] {
+  background-color: var(---primay);
+  color: var(---contrast);
+  border: none;
+  padding: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  transition: 0.2s linear all;
+}
+
+form [type="submit"]:hover {
+  background-color: #0CB397;
+  color: var(--white);
+}
+
+.result-wrapper {
+  margin-top: 5rem;
+}
+
+.result-wrapper h2 {
+  text-align: center;
+}
+
+.result-wrapper .result {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.result-wrapper .result img {
+  width: 100%;
+}
+
+.result-wrapper .result p {
+  margin: 0 0 1rem;
+  font-size: 1.6rem;
+}
+
+.result-wrapper .result span {
+  font-weight: 700;
+}
